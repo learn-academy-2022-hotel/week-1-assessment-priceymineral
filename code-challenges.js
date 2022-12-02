@@ -105,6 +105,8 @@ const reverseString = (str) => {
 
 console.log(reverseString(currentCohort))
 
+
+
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
 // Pseudo code:
@@ -115,6 +117,26 @@ const givenValue1 = 42
 
 const givenValue2 = 10
 // Expected output: 8
+
+// create a fn that takes in an array and a number
+const lastIndex = (arr, num) => {
+    // loop from end to beginning of array
+    for (let i = arr.length - 1; i >= 0; i--) {
+        // if current number is equal to given number
+        if (arr[i] === num) {
+            // return the index
+            return i
+        }
+    }
+
+    // if loop ends and value is not found
+    // return 'not found'
+    return `${num} not found in array`
+}
+
+console.log(lastIndex(myNumbers, givenValue1))
+console.log(lastIndex(myNumbers, givenValue2))
+console.log(lastIndex(myNumbers, 1000))
 
 
 
