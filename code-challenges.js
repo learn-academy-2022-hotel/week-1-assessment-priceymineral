@@ -60,6 +60,8 @@ console.log(isBoiling(temp1))
 console.log(isBoiling(temp2))
 console.log(isBoiling(temp3))
 
+
+
 // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
 // Pseudo code:
@@ -68,12 +70,28 @@ const padres1984WorldSeriesRuns = [2, 5, 2, 2, 4]
 const padres1998WorldSeriesRuns = [6, 3, 5, 3]
 // Expected output: 9
 
+// create a function that takes two arrays as arguments
+const combinedLength = (arr1, arr2) => {
+    // combine the two and store in a variable
+    let combinedArray = arr1.concat(arr2)
+
+    // return the length of the combined array
+    return combinedArray.length
+}
+
+console.log(combinedLength(padres1984WorldSeriesRuns, padres1998WorldSeriesRuns))
+
+
+
 // --------------------3) Create the code that will reverse the letters of a string using the test variable provided below.
 
 // Pseudo code:
 
 const currentCohort = "Hotel 2022"
 // Expected output: "2202 letoH"
+
+
+
 
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
@@ -85,6 +103,8 @@ const givenValue1 = 42
 
 const givenValue2 = 10
 // Expected output: 8
+
+
 
 // --------------------5) Create the code that will sort all the numbers in an array from largest to smallest. Use the test variables provided below.
 
