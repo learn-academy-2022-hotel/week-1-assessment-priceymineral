@@ -90,8 +90,20 @@ console.log(combinedLength(padres1984WorldSeriesRuns, padres1998WorldSeriesRuns)
 const currentCohort = "Hotel 2022"
 // Expected output: "2202 letoH"
 
+// create a fn that takes one argument, a string
+const reverseString = (str) => {
+    // convert str to array
+    let strToArr = str.split("")
+    // reverse the array
+    let arrReversed = strToArr.reverse()
+    // convert to str
+    let strReversed = arrReversed.join("")
 
+    // return newest version of str
+    return strReversed
+}
 
+console.log(reverseString(currentCohort))
 
 // --------------------4) Create the code that will return the last index of the given value from the array using the test variables provided below.
 
