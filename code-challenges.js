@@ -31,6 +31,35 @@ const temp2 = 350
 const temp3 = 212
 // Expected output: "212 is at boiling point"
 
+// input - one number
+// output - one string indicating the state of the water
+
+// create a fn that takes in a number argument corresponding temperature
+const isBoiling = (temperature) => {
+    // create a statement variable, initialize to empty string
+    let stateOfWater = ''
+    // if water above bp
+    if (temperature > 212) {
+        // reassign statement variable according to the instructions
+        stateOfWater = `${temperature} is -ABOVE- boiling point`
+        // if water is at boiling point 
+    } else if (temperature === 212) {
+        stateOfWater = `${temperature} is -AT- boiling point`
+        // reassign statement variable according to the instructions
+        // else 
+    } else {
+        // reassign statement variable according to the instructions
+        stateOfWater = `${temperature} is -BELOW- boiling point`
+    }
+
+    // return statement
+    return stateOfWater
+}
+
+console.log(isBoiling(temp1))
+console.log(isBoiling(temp2))
+console.log(isBoiling(temp3))
+
 // --------------------2) Create the code that will combine the two arrays and return the length using the test variables provided below.
 
 // Pseudo code:
