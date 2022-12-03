@@ -149,3 +149,12 @@ const sanDiegoSummerTemperatures = [79, 80, 72, 73, 82, 77, 76]
 
 const sanDiegoWinterTemperatures = [59, 68, 62, 59, 66, 67, 66]
 // Expected output: [68, 67, 66, 66, 62, 59, 59]
+
+// create a fn that takes in an array to be sortyed 
+const largestToSmallest = (arr) => {
+    // sort the input array from largest to smallest number
+    return arr.sort((a,b) => (b-a))
+}
+
+console.log(largestToSmallest(sanDiegoSummerTemperatures))
+console.log(largestToSmallest(sanDiegoWinterTemperatures))
