@@ -9,8 +9,8 @@
 const colors = ["tangerine", "magenta", "lilac", "daffodil"]
 // console.log(colors.push("indigo"))
 
-// a) Your answer: 
-// b) Verify and explain:
+// a) Your answer: 5
+// b) Verify and explain: .push() method returns the length of the string/array it is called on
 
 // --------------------1) What will this log?
 
@@ -43,12 +43,12 @@ const weekendDays = ["saturday", "sunday"]
 // console.log(weekendDays.toUpperCase())
 
 // a) Your answer: error
-// b) Verify and explain: 'TypeError: weekendDays.toUpperCase is not a function.' toUpperCase() is a string method, does not work with arrays
+// b) Verify and explain: 'TypeError: weekendDays.toUpperCase is not a function.' toUpperCase() is a string method, does not work with arrays.
 
 // --------------------5) What will this log?
 
 const dataTypes = ["number", "string", "Boolean", "undefined"]
 // console.log(typeof dataTypes.length)
 
-// a) Your answer: error, typeof without the () is not recognized byt the interpreter, the correct syntax is: console.log(typeof(dataTypes.length)), which should log 'number,' since the .length method returns a number.
-// b) Verify and explain: number. I was not aware that was the correct syntax of typeof.
+// a) Your answer: error, typeof without the "()"" is not recognized by the interpreter, the correct syntax is: console.log(typeof(dataTypes.length)), which should log 'number,' since the .length method returns a number.
+// b) Verify and explain: "number." I was not aware that was the correct syntax of typeof.
