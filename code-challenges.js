@@ -51,10 +51,19 @@ const isBoiling = (temperature) => {
         // reassign statement variable according to the instructions
         stateOfWater = `${temperature} is -BELOW- boiling point`
     }
-
+    
     // return statement
     return stateOfWater
 }
+// create a fn that takes in a number argument corresponding temperature
+    // create a statement variable, initialize to empty string
+    // if water above bp
+        // reassign statement variable according to the instructions
+    // if water is at boiling point 
+        // reassign statement variable according to the instructions
+    // else 
+        // reassign statement variable according to the instructions
+    // return the statement variable
 
 console.log(isBoiling(temp1))
 console.log(isBoiling(temp2))
@@ -74,12 +83,15 @@ const padres1998WorldSeriesRuns = [6, 3, 5, 3]
 const combinedLength = (arr1, arr2) => {
     // combine the two and store in a variable
     let combinedArray = arr1.concat(arr2)
-
+    
     // return the length of the combined array
     return combinedArray.length
 }
 
 console.log(combinedLength(padres1984WorldSeriesRuns, padres1998WorldSeriesRuns))
+// create a function that takes two arrays as arguments
+    // combine the two and store in a variable
+    // return the length of the combined array
 
 
 
@@ -98,10 +110,15 @@ const reverseString = (str) => {
     let arrReversed = strToArr.reverse()
     // convert to str
     let strReversed = arrReversed.join("")
-
+    
     // return newest version of str
     return strReversed
 }
+// create a fn that takes one argument, a string
+    // convert str to array
+    // reverse the array
+    // convert to str
+    // return newest version of str
 
 console.log(reverseString(currentCohort))
 
@@ -128,11 +145,17 @@ const lastIndex = (arr, num) => {
             return i
         }
     }
-
+    
     // if loop ends and value is not found
     // return 'not found'
     return `${num} not found in array`
 }
+// create a fn that takes in an array and a number
+    // loop from end to beginning of array
+        // if current number is equal to given number
+            // return the index
+    // if loop ends and value is not found
+    // return 'not found'
 
 console.log(lastIndex(myNumbers, givenValue1))
 console.log(lastIndex(myNumbers, givenValue2))
@@ -155,6 +178,8 @@ const largestToSmallest = (arr) => {
     // sort the input array from largest to smallest number
     return arr.sort((a,b) => (b-a))
 }
+// create a fn that takes in an array to be sortyed 
+    // sort the input array from largest to smallest number
 
 console.log(largestToSmallest(sanDiegoSummerTemperatures))
 console.log(largestToSmallest(sanDiegoWinterTemperatures))
